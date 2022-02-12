@@ -1,0 +1,57 @@
+%estilosParrafo {
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+%h1 {
+    padding-bottom: 380px;
+    color: $color-texto;
+}
+
+%intro{
+    background-color: $background-color;
+    border-radius: 25px;
+    height: 100px;
+    padding-top: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+%h2 {
+    font-weight:bold;
+    color: $color-texto;
+}
+
+%estiloBtn {
+    background-image: $background-btn;
+    border: none;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: $color-btn;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: inline-block;
+
+
+    &:hover {
+        background-position: right center; 
+        color: $color-btn;
+        text-decoration: none;
+    }
+}
+
+%estiloFondo {
+    background-image: url('../img/fondo1.png');
+}
+
+%animacionCard{
+    overflow: hidden;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    }   
+}

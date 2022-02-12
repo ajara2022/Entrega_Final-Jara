@@ -1,0 +1,88 @@
+body{
+
+    @extend %estiloFondo;
+
+    .container{
+
+        .intro{
+            @extend %intro;
+
+            h2{
+                @extend %h2;
+            }
+        }
+
+        h1{
+            @extend %h1;
+        }
+        
+        .card, .card-img  {
+            border: none;
+            border-radius: $border-radius;
+            box-shadow: $box-shadow;
+
+            .card-img-overlay {
+                padding: 20px;
+            }
+
+            .card-title {
+                @include cardTitle(bold, 28px, 8px, $color-texto);
+            }
+            .card-subtitle {
+                @include cardSubtitle();
+            }
+            .card-text {
+                @include cardText();
+            }
+        }
+
+        .btn {
+            @extend %estiloBtn;
+        }
+
+        .section1{
+            margin-top: 120px;
+        }
+
+        .section2{
+
+            .card {
+                @extend %animacionCard;
+            }
+        }
+
+        .section3{
+
+            .card {
+                @extend %animacionCard;
+                background-color:#fff;
+                text-align:center;
+                
+            }
+            .rounded-circle{
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width:1023px) {
+    .card{
+        .card-title {
+            @include cardTitle(bold, 20px, 8px, $color-texto);
+            font-size: 1.25rem;
+        }
+        .card-subtitle {
+            @include cardSubtitle();
+            font-size: 1rem;
+        }
+        .card-text {
+            @include cardText();
+            font-size: 1rem;
+        }
+        .img-fluid{
+            display: none;
+        }
+    }
+}

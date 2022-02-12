@@ -1,0 +1,23 @@
+@mixin fontStyle ($color) {
+    color: $color-texto;
+    
+}
+
+@mixin cardTitle ($ancho, $margintop, $marginbootom, $color) {
+    font-weight:$ancho;
+    margin-top:$margintop;
+    margin-bottom:$marginbootom;
+    color: $color;
+}
+
+@mixin cardSubtitle () {
+    text-transform:uppercase;
+    font-weight:bold;
+    color:#d0d0d0;
+    letter-spacing:2px;
+}
+
+@mixin cardText () {
+    margin-top:15px;
+    margin-bottom:20px;
+}
