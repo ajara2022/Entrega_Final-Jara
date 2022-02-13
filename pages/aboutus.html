@@ -16,21 +16,24 @@
     <!--Link FontAwesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/favicon.png">
     <title>Homedog | Sobre nosotros </title>
 </head>
 
-<body>
+<body class="containerGrid">
     <header class="header">
-        <nav class="navbar navbar-expand-lg text-center">
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top text-center">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"></a>
+                <a class="navbar-brand" href="./index.html">
+                    <img src="../img/favicon.png" alt="" width="100" height="100">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="../index.html">Home<span class="sr-only"></span></a>
                         </li>
@@ -56,86 +59,64 @@
         </nav>
     </header>
 
-    <main class="container">
-        <section class="section1">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../img/banner.jpg" class="d-block w-100" alt="Paseos y hospedajes para perros">
-                        <div class="carousel-caption  d-md-block">
-                            <h1>Sobre nosotros</h1>
-                        </div>
+    <main class="main">
+        <section class="aboutus-title">
+            <div class="intro">
+                <h2>Nuestro equipo</h2>
+            </div>
+        </section>
+        <section class="aboutus">
+            <div class="profile-card">
+                <div class="background-block">
+                    <img src="../img/ser_paseador.jpg" alt="CEO-Founder" class="background" />
+                </div>
+                <div class="profile-thumb-block">
+                    <img src="https://randomuser.me/api/portraits/women/40.jpg" alt="profile-image" class="profile" />
+                </div>
+                <div class="card-content">
+                    <h3 class="title">Ann J.</h3>
+                    <p class="subtitle">CEO-Founder</p>
+                    <div class="icon-block">
+                        <a class="facebook" href="#"><i class="fab fa-facebook"></i></a>
+                        <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="instagram" href="#"> <i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="about-box">
-            <div class="container">
-                <div class="intro">
-                    <h2 class="text-center">Nuestro equipo</h2>
+            <div class="profile-card">
+                <div class="background-block">
+                    <img src="../img/ser_paseador.jpg" alt="CEO-Founder" class="background" />
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card profile-card-3">
-                            <div class="background-block">
-                                <img src="../img/ser_paseador.jpg" alt="CEO-Founder" class="background" />
-                            </div>
-                            <div class="profile-thumb-block">
-                                <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="profile-image"
-                                    class="profile" />
-                            </div>
-                            <div class="card-content">
-                                <h3 class="title">Justin Timberland</h3>
-                                <p class="subtitle">CEO-Founder</p>
-                                <div class="icon-block">
-                                    <a class="facebook" href="#"><i class="fab fa-facebook"></i></a>
-                                    <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
-                                    <a class="instagram" href="#"> <i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card profile-card-3">
-                            <div class="background-block">
-                                <img src="../img/ser_paseador.jpg" alt="Ingeniero" class="background" />
-                            </div>
-                            <div class="profile-thumb-block">
-                                <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="profile-image"
-                                    class="profile" />
-                            </div>
-                            <div class="card-content">
-                                <h3 class="title">Jhon Connor</h3>
-                                <p class="subtitle">Ingeniero</p>
-                                <div class="icon-block">
-                                    <a class="facebook" href="#"><i class="fab fa-facebook"></i></a>
-                                    <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
-                                    <a class="instagram" href="#"> <i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card profile-card-3">
-                            <div class="background-block">
-                                <img src="../img/ser_paseador.jpg" alt="Diseñador" class="background" />
-                            </div>
-                            <div class="profile-thumb-block">
-                                <img src="https://randomuser.me/api/portraits/women/41.jpg" alt="profile-image"
-                                    class="profile" />
-                            </div>
-                            <div class="card-content">
-                                <h3 class="title">Sarah Connor</h3>
-                                <p class="subtitle">Diseñador</p>
-                                <div class="icon-block">
-                                    <a class="facebook" href="#"><i class="fab fa-facebook"></i></a>
-                                    <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
-                                    <a class="instagram" href="#"> <i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="profile-thumb-block">
+                    <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="profile-image" class="profile" />
+                </div>
+                <div class="card-content">
+                    <h3 class="title">Gaby S.</h3>
+                    <p class="subtitle">CEO-Founder</p>
+                    <div class="icon-block">
+                        <a class="facebook" href="#"><i class="fab fa-facebook"></i></a>
+                        <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="instagram" href="#"> <i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
+            </div>
+            <div class="profile-card">
+                <div class="background-block">
+                    <img src="../img/ser_paseador.jpg" alt="Diseñadora" class="background" />
+                </div>
+                <div class="profile-thumb-block">
+                    <img src="https://randomuser.me/api/portraits/women/41.jpg" alt="profile-image" class="profile" />
+                </div>
+                <div class="card-content">
+                    <h3 class="title">Mary L.</h3>
+                    <p class="subtitle">Diseñadora</p>
+                    <div class="icon-block">
+                        <a class="facebook" href="#"><i class="fab fa-facebook"></i></a>
+                        <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="instagram" href="#"> <i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
     </main>
