@@ -17,9 +17,7 @@ body{
         }
         
         .card, .card-img  {
-            border: none;
-            border-radius: $border-radius;
-            box-shadow: $box-shadow;
+            @include card();
 
             .card-img-overlay {
                 padding: 20px;

@@ -1,47 +1,97 @@
-body{
-
-    @extend %estiloFondo;
+body {
+  @extend %estiloFondo;
 
     .container{
-
         padding: 10px;
 
-        .help-box 
-        
-        h2 {
-            @extend %h2;
-        }
+        .helpbox-title{
 
-        .accordion{
+            .intro{
+                margin-top: 150px;
 
-            .accordion-item{
-                background-color: transparent;
-                border: none;
-
-                .accordion-header{
-                    padding: 0;
+                h1 {
+                    @extend %h1;
                 }
             }
+        } 
 
-            .accordion-button{
-                border-radius: 30px;
-                background-image: linear-gradient(to right, #B24592 0%, #F15F79  51%, #B24592  100%);
-                color: white;
-                border-color: black;
-                margin-bottom: 10px;
+        .helpbox{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: auto;
+            width: 100%;
 
-                &:focus{
-                    box-shadow: none;
-                    border: none;
-                    border-color:none;
-                    color: white;
+            .card {
+                @include card();
+                background: white;
+                margin: 20px;
+                padding: 38px 36px;
+                width: 90%;
+                
+                details {
+                display: flex;
+                border-radius: 5px;
+                overflow: hidden;
+                background: rgba(0, 0, 0, .05);
+                border-left: 15px solid gray;
+                padding:15px;
+                margin-top: 15px;
+                
+                    summary {
+                        position:relative;
+                        display:flex;
+                        flex-direction:row;
+                        align-content: center;
+                        justify-content: flex-start;
+                        font-weight: bold;
+                        padding: 20px;
+                        cursor:pointer;
+                        &::-webkit-details-marker {
+                        display:none;
+                        
+                        &::before {
+                            cursor: pointer;
+                            position:absolute;
+                            display:inline-flex;
+                            width:1rem;
+                            height:1rem;
+                            left: 0rem;
+                            margin-right:.5rem;
+                            
+                        }
+                    }
+                    }
+                    p {
+                        cursor:default;
+                        margin-left:2rem;
+                    }
                 }
+                
+                .clientes {
+                    --highlight: #ffe5e4;
+                    background: #ffe5e4;
+                    border-left-color: $color-rosa;
+                }
+                
+                .paseadores {
+                    --highlight:#fff0ca ;
+                    background: #fff0ca;
+                    border-left-color: $color-marron;
+                }
+                
+                .anfitriones {
+                    --highlight: #e8e6dd ;
+                    background:  #e8e6dd;
+                    border-left-color: $color-gris;
+                }
+                
             }
         }
     }
 }
-        
-        
 
 
+
+    
     

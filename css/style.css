@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-body .container h1, body .container .contact-box h1 {
+body .container h1, body .container .contact-box h1, body .container .helpbox-title .intro h1 {
   padding-bottom: 380px;
   color: #313437; }
 
@@ -15,7 +15,7 @@ body .container .intro, .containerGrid .aboutus-title .intro {
   margin-top: 40px;
   margin-bottom: 40px; }
 
-body .container .intro h2, .containerGrid .aboutus-title .intro h2, body .container .help-box h2, body .container .service-box h2 {
+body .container .intro h2, .containerGrid .aboutus-title .intro h2, body .container .service-box h2 {
   font-weight: bold;
   color: #313437; }
 
@@ -42,7 +42,7 @@ body .container .section2 .card, body .container .section3 .card {
   cursor: pointer; }
   body .container .section2 .card:hover, body .container .section3 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06); }
+    box-shadow: 0px 0px 5px 1px #F79D9C; }
 
 .twitter {
   color: #F15F79;
@@ -68,7 +68,7 @@ body .container .section2 .card, body .container .section3 .card {
 body .container .card, body .container .card-img {
   border: none;
   border-radius: 30px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06); }
+  box-shadow: 0px 0px 5px 1px #9ED3D9; }
   body .container .card .card-img-overlay, body .container .card-img .card-img-overlay {
     padding: 20px; }
   body .container .card .card-title, body .container .card-img .card-title {
@@ -239,22 +239,64 @@ body .container {
 
 body .container {
   padding: 10px; }
-  body .container .accordion .accordion-item {
-    background-color: transparent;
-    border: none; }
-    body .container .accordion .accordion-item .accordion-header {
-      padding: 0; }
-  body .container .accordion .accordion-button {
-    border-radius: 30px;
-    background-image: linear-gradient(to right, #B24592 0%, #F15F79 51%, #B24592 100%);
-    color: white;
-    border-color: black;
-    margin-bottom: 10px; }
-    body .container .accordion .accordion-button:focus {
-      box-shadow: none;
+  body .container .helpbox-title .intro {
+    margin-top: 150px; }
+  body .container .helpbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    width: 100%; }
+    body .container .helpbox .card {
       border: none;
-      border-color: none;
-      color: white; }
+      border-radius: 30px;
+      box-shadow: 0px 0px 5px 1px #9ED3D9;
+      background: white;
+      margin: 20px;
+      padding: 38px 36px;
+      width: 90%; }
+      body .container .helpbox .card details {
+        display: flex;
+        border-radius: 5px;
+        overflow: hidden;
+        background: rgba(0, 0, 0, 0.05);
+        border-left: 15px solid gray;
+        padding: 15px;
+        margin-top: 15px; }
+        body .container .helpbox .card details summary {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          align-content: center;
+          justify-content: flex-start;
+          font-weight: bold;
+          padding: 20px;
+          cursor: pointer; }
+          body .container .helpbox .card details summary::-webkit-details-marker {
+            display: none; }
+            body .container .helpbox .card details summary::-webkit-details-marker::before {
+              cursor: pointer;
+              position: absolute;
+              display: inline-flex;
+              width: 1rem;
+              height: 1rem;
+              left: 0rem;
+              margin-right: .5rem; }
+        body .container .helpbox .card details p {
+          cursor: default;
+          margin-left: 2rem; }
+      body .container .helpbox .card .clientes {
+        --highlight: #ffe5e4;
+        background: #ffe5e4;
+        border-left-color: #F79D9C; }
+      body .container .helpbox .card .paseadores {
+        --highlight:#fff0ca ;
+        background: #fff0ca;
+        border-left-color: #D6AC3E; }
+      body .container .helpbox .card .anfitriones {
+        --highlight: #e8e6dd ;
+        background: #e8e6dd;
+        border-left-color: #999894; }
 
 body .container {
   padding: 10px; }

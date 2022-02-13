@@ -1,6 +1,11 @@
 @mixin fontStyle ($color) {
     color: $color-texto;
-    
+}
+
+@mixin card() {
+    border: none;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
 }
 
 @mixin cardTitle ($ancho, $margintop, $marginbootom, $color) {
