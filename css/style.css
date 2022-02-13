@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-body .container h1 {
+body .container h1, body .container .contact-box h1 {
   padding-bottom: 380px;
   color: #313437; }
 
@@ -15,7 +15,7 @@ body .container .intro, .containerGrid .aboutus-title .intro {
   margin-top: 40px;
   margin-bottom: 40px; }
 
-body .container .intro h2, .containerGrid .aboutus-title .intro h2, body .container .contact-box h2, body .container .help-box h2, body .container .service-box h2 {
+body .container .intro h2, .containerGrid .aboutus-title .intro h2, body .container .help-box h2, body .container .service-box h2 {
   font-weight: bold;
   color: #313437; }
 
