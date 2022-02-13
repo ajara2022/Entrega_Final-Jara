@@ -67,7 +67,7 @@
                     -webkit-filter: blur(0.5px);
                     filter: blur(0.5px);
                     -webkit-transform: scale(1.8);
-                    transform: scale(2.8);
+                    transform: scale(4);
                 }
             }
 
@@ -94,7 +94,7 @@
                 padding: 15px 25px;
                 color:#232323;
                 float:left;
-                background:#efefef;
+                background:#ffffff;
                 height:50%;
                 border-radius:0 0 5px 5px;
                 position: relative;
@@ -110,7 +110,7 @@
 
                 &::before {
                     content: '';
-                    background: #efefef;
+                    background: #ffffff;
                     width: 120%;
                     height: 100%;
                     left: 11px;

@@ -163,7 +163,7 @@ body .container .section3 .rounded-circle {
           -webkit-filter: blur(0.5px);
           filter: blur(0.5px);
           -webkit-transform: scale(1.8);
-          transform: scale(2.8); }
+          transform: scale(4); }
       .containerGrid .aboutus .profile-card .profile-thumb-block {
         z-index: 9998; }
         .containerGrid .aboutus .profile-card .profile-thumb-block .profile {
@@ -183,7 +183,7 @@ body .container .section3 .rounded-circle {
         padding: 15px 25px;
         color: #232323;
         float: left;
-        background: #efefef;
+        background: #ffffff;
         height: 50%;
         border-radius: 0 0 5px 5px;
         position: relative;
@@ -200,7 +200,7 @@ body .container .section3 .rounded-circle {
           letter-spacing: 2px; }
         .containerGrid .aboutus .profile-card .card-content::before {
           content: '';
-          background: #efefef;
+          background: #ffffff;
           width: 120%;
           height: 100%;
           left: 11px;
