@@ -34,7 +34,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="../index.html">Home<span class="sr-only"></span></a>
+                            <a class="nav-link" href="../index.html">Homedog<span class="sr-only"></span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled" href="#">Servicios</a>
@@ -59,99 +59,93 @@
     </header>
 
     <main class="container">
-        <section class="section1">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../img/banner.jpg" class="d-block w-100" alt="Paseos y hospedajes para perros">
-                        <div class="carousel-caption  d-md-block">
-                            <h1>Servicios de paseos y hospedajes</h1>
+        <section class="servicebox-title">
+            <div class="intro">
+                <h1 class="text-center">Buscá servicios de hospedajes o paseos</h1>
+            </div>
+        </section>
+        <section class="servicebox-buscador">
+            <form class="row g-3">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="select">Servicio</label>
+                        <select class="form-control" type="select">
+                            <option>Paseos</option>
+                            <option>Hospedajes</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="start">Fecha desde</label>
+                        <input type="date" id="start" name="trip-start" value="16/12/2021" min="16/12/2021"
+                            max="16/12/2022" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="fechah">Fecha hasta</label>
+                        <input type="date" id="start" name="trip-start" value="16/12/2021" min="16/12/2021"
+                            max="16/12/2022" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-grad">Buscar</button>
+                    </div>
+                </div>
+            </form>
+            </section>
+            <section class="servicebox">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card-service mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="../img/p1.jpg" class="rounded-circle shadow-sm py-2 px-2"
+                                    alt="Paseos para perros">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title">Moony P.</h3>
+                                    <p class="card-text"><i class="fas fa-map-marker"></i><small
+                                            class="text-muted">Palermo,
+                                            Ciudad de Buenos Aires</small></p>
+                                    <p class="card-text">Desde niña mis padres me han enseñado el respeto y cariño hacia los
+                                        animales. Hemos tenido en mi casa materna canarios, gatos, loros, tortugas,
+                                        perros/as y
+                                        hasta vi parir a los cachorros. Eso hizo crecer en mi el amor...</p>
+                                    <div class="social"><a href="#" class="btn btn-grad">Contactar</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card-service mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="../img/p2.jpg" class="rounded-circle shadow-sm py-2 px-2"
+                                    alt="Paseos para perros">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title">Merlina H.</h3>
+                                    <p class="card-text"><i class="fas fa-map-marker"></i><small
+                                            class="text-muted">Palermo,
+                                            Ciudad de Buenos Aires</small></p>
+                                    <p class="card-text">Hola Mundo Perruno! Mi nombre es Merlina tengo 24 años. Desde
+                                        chiquitita que convivo con animales. Me
+                                        preocupa mucho su bien estar y defender sus derechos. Estando con ellos me doy
+                                        cuenta
+                                        del lazo de amor puro e incondicional...</p>
+                                    <div class="social"><a href="#" class="btn btn-grad">Contactar</a></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="service-box">
-            <div class="container">
-                <div class="intro">
-                    <h2 class="text-center">Buscá servicios de hospedajes o paseos</h2>
-                </div>
-                <form class="row g-3">
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label for="select">Servicio</label>
-                            <select class="form-control" type="select">
-                                <option>Paseos</option>
-                                <option>Hospedajes</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label for="start">Fecha desde</label>
-                            <input type="date" id="start" name="trip-start" value="16/12/2021" min="16/12/2021"
-                                max="16/12/2022" class="form-control">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label for="fechah">Fecha hasta</label>
-                            <input type="date" id="start" name="trip-start" value="16/12/2021" min="16/12/2021"
-                                max="16/12/2022" class="form-control">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-grad">BUSCAR</button>
-                        </div>
-                    </div>
-                </form>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="card-service mb-3">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="../img/img4.jpg" class="rounded-circle shadow-sm py-2 px-2"
-                                        alt="Paseos para perros">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h3 class="card-title">Carla Fernandez</h3>
-                                        <p class="card-text"><i class="fas fa-map-marker"></i><small
-                                                class="text-muted">Palermo,
-                                                Ciudad de Buenos Aires</small></p>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural
-                                            lead-in to additional content. This content is a little bit longer.</p>
-                                        <div class="social"><a href="#" class="btn btn-grad">Contactar</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card-service mb-3">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="../img/img4.jpg" class="rounded-circle shadow-sm py-2 px-2"
-                                        alt="Paseos para perros">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h3 class="card-title">Natalia Gonzalez</h3>
-                                        <p class="card-text"><i class="fas fa-map-marker"></i><small
-                                                class="text-muted">Palermo,
-                                                Ciudad de Buenos Aires</small></p>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural
-                                            lead-in to additional content. This content is a little bit longer.</p>
-                                        <div class="social"><a href="#" class="btn btn-grad">Contactar</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
     </main>
@@ -163,13 +157,13 @@
                     <h2 class="title">Servicios</h2>
                     <ul class="list">
                         <li>
-                            <a href="#"><i class="fas fa-paw"></i>Paseos</a>
+                            <a href="./service.html"><i class="fas fa-paw"></i>Paseos</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fas fa-paw"></i>Hospedajes</a>
+                            <a href="./service.html"><i class="fas fa-paw"></i>Hospedajes</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fas fa-paw"></i>Veterinarias</a>
+                            <a href="./service.html"><i class="fas fa-paw"></i>Veterinarias</a>
                         </li>
                     </ul>
                 </div>
@@ -177,13 +171,13 @@
                     <h2 class="title">Ayuda</h2>
                     <ul class="list">
                         <li>
-                            <a href="#"><i class="fas fa-paw"></i>Anfitriones</a>
+                            <a href="./help.html"><i class="fas fa-paw"></i>Anfitriones</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fas fa-paw"></i>Paseadores</a>
+                            <a href="./help.html"><i class="fas fa-paw"></i>Paseadores</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fas fa-paw"></i>Clientes</a>
+                            <a href="./help.html"><i class="fas fa-paw"></i>Clientes</a>
                         </li>
                     </ul>
                 </div>
@@ -204,9 +198,9 @@
                 <div class="col-md-3">
                     <h2 class="title">Seguinos</h2>
                     <div class="social">
-                        <a class="btn btn-grad" href="#" role="button"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-grad" href="#" role="button"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-grad" href="#" role="button"><i class="fab fa-instagram"></i></a>
+                        <a class="facebook" href="#" role="button"><i class="fab fa-facebook-f"></i></a>
+                        <a class="twitter" href="#" role="button"><i class="fab fa-twitter"></i></a>
+                        <a class="instagram" href="#" role="button"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>

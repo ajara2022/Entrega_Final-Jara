@@ -1,41 +1,44 @@
 body{
-
     @extend %estiloFondo;
-
     .container{
-
         padding: 10px;
-
-        .contact-box{
-
-            h1{
-                @extend %h1;
+        .contact-titulo {
+            .intro{
+                margin-top: 150px;
+                h1 {
+                    @extend %h1;
+                }
             }
-
-      
-            .abs-center {
-                display: flex;
-                align-items: center;
+        }
+        .contact-box{
+            .row{
                 justify-content: center;
-                min-height: 100vh;
+            
+                .card {
+                    @include card();
+                    padding: 20px;
+                    width: 80%;
+                    align-items: center;
 
-                .form {
-                    width: 700px;
-                    border-radius: 20px;
-                }
+                    form {
+                        width: 90%;
+                        border-radius: 20px;
+                        align-content: center;
+                    }
 
-                .form-control, .form-select {
-                    padding: 12px;
-                    border: 1px solid #ccc;
-                    margin-top: 6px;
-                    margin-bottom: 16px;
-                    resize: vertical;
-                    border-radius: 15px;
-                }
+                    .form-control, .form-select {
+                        padding: 12px;
+                        border: 1px solid #9ED3D9;
+                        margin-top: 6px;
+                        margin-bottom: 16px;
+                        resize: vertical;
+                        border-radius: 15px;
+                    }
 
-                .form-control, .form-select, .form-check-input:focus {
-                    box-shadow: none;
-                    border: none
+                    .form-control, .form-select, .form-check-input:focus {
+                        box-shadow: none;
+                        border: 1px solid #9ED3D9;
+                    }
                 }
             }
         }

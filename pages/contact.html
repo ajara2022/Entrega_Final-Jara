@@ -58,35 +58,47 @@
         </nav>
     </header>
 
-    <main class="main">
+    <main class="container">
         <section class="contact-titulo">
-            <h2>Contactanos</h2>
-            <p>Comunicate con nosotros para despejar todas tus dudas.</p>
+            <div class="intro">
+                <h1 class="text-center">Contactanos para despejar todas tus dudas</h1>
+            </div>
         </section>
-        <section class="contact-form">
-            <form action="/action_page.php" class="formulario">
-                    <label for="nombre" class="formulario-label">Nombre</label>
-                    <input type="nombre" class="formulario-control" id="nombre" placeholder="Ingresá tu nombre" name="nombre">
-                    <label for="apellido" class="formulario-label">Apellido</label>
-                    <input type="apellido" class="formulario-control" id="apellido" placeholder="Ingresá tu apellido"
-                        name="apellido">
-                    <label for="email" class="formulario-label">Email</label>
-                    <input type="email" class="formulario-control" id="email" placeholder="Enter email" name="email">
-                    <label for="pais" class="formulario-label">País</label>
-                    <select type="pais" class="formulario-control" id="pais">
-                        <option>Argentina</option>
-                        <option>Uruguay</option>
-                        <option>Brasil</option>
-                        <option>Chile</option>
-                    </select>
-                    <label for="comentario" class="formulario-label">Mensaje</label>
-                    <textarea class="formulario-control" rows="15" id="comentario" name="comentario"
-                        placeholder="Escribí tu mensaje.."></textarea>
-                    <label for="novedades" class="formulario-control">
-                    <input type="checkbox" class="formulario-control" id="novedades" name="novedades">Quiero suscribirme y tener nuevas novedades.
-                    </label>
-                    <button type="submit" class="boton">Enviar</button>
-            </form>
+        <section class="contact-box">
+            <div class="row">
+                <div class="card">
+                    <form action="/action_page.php">
+                        <div class="mb-3 mt-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="name" class="form-control" id="name" placeholder="Ingresá tu nombre"
+                                name="name">
+                            <label for="lastname" class="form-label">Apellido</label>
+                            <input type="lastname" class="form-control" id="lastname" placeholder="Ingresá tu apellido"
+                                name="lastname">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                            <label for="comment">País</label>
+                            <select class="form-select">
+                                <option>Argentina</option>
+                                <option>Uruguay</option>
+                                <option>Brasil</option>
+                                <option>Chile</option>
+                            </select>
+                            <label for="comment">Mensaje</label>
+                            <textarea class="form-control" rows="15" id="comment" name="text"
+                                placeholder="Escribí tu mensaje.."></textarea>
+                        </div>
+                        <div class="form-check mb-3">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember"> Quiero suscribirme
+                                y
+                                tener nuevas novedades.
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-grad">Enviar</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -97,13 +109,13 @@
                     <h2 class="title">Servicios</h2>
                     <ul class="list">
                         <li>
-                            <a href="#"><i class="fas fa-paw"></i>Paseos</a>
+                            <a href="./service.html"><i class="fas fa-paw"></i>Paseos</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fas fa-paw"></i>Hospedajes</a>
+                            <a href="./service.html"><i class="fas fa-paw"></i>Hospedajes</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fas fa-paw"></i>Veterinarias</a>
+                            <a href="./service.html"><i class="fas fa-paw"></i>Veterinarias</a>
                         </li>
                     </ul>
                 </div>
@@ -111,13 +123,13 @@
                     <h2 class="title">Ayuda</h2>
                     <ul class="list">
                         <li>
-                            <a href="#"><i class="fas fa-paw"></i>Anfitriones</a>
+                            <a href="./help.html"><i class="fas fa-paw"></i>Anfitriones</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fas fa-paw"></i>Paseadores</a>
+                            <a href="./help.html"><i class="fas fa-paw"></i>Paseadores</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fas fa-paw"></i>Clientes</a>
+                            <a href="./help.html"><i class="fas fa-paw"></i>Clientes</a>
                         </li>
                     </ul>
                 </div>
